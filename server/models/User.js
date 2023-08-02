@@ -36,3 +36,13 @@ const UserSchema = new mongoose.Schema(
 
 const User = mongoose.model("User", UserSchema);
 export default User;
+
+/* In a MERN app, 
+the model or userSchema comes
+ into play when the controller needs 
+ to access the data in the MongoDB database. 
+ The model or userSchema is a JavaScript object
+  that defines the structure of the data in 
+  the MongoDB database. The model or userSchema 
+  is used by the controller to create, read, update,
+ and delete data in the MongoDB database.*/
