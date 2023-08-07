@@ -132,7 +132,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    ADMIN DASHBOARD
                   </Typography>
                 </Box>
                 {!isNonMobile && (
@@ -193,7 +193,14 @@ const Sidebar = ({
             </List>
           </Box>
 
-          <Box position="absolute" bottom="2rem">
+          <Box  sx={{
+              position: "sticky",
+              bottom: 0,
+              zIndex: 1,
+              backgroundColor: theme.palette.background.alt,
+              mt: "auto",
+              py: "1rem",
+              borderTop: `1px solid ${theme.palette.secondary[200]}`,}}>
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
